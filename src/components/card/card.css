@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+
+.img {
+  width: 395px;
+  height: 269px;
+  left: 94px;
+  top: 209px;
+  border-radius: 24px;
+}
+
+.card-dtls {
+  display: flex;
+
+  gap: 1.2rem;
+}
+
+.super-host-cnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 28px;
+  left: 94px;
+  top: 493px;
+  border: 1px solid #4f4f4f;
+  border-radius: 12px;
+}
+
+.super-host-heading {
+  width: 81px;
+  height: 15px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #4f4f4f;
+}
+
+.card-rating-cnt {
+  display: flex;
+}
+
+.card-type-cnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-type,
+.card-beds {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.card-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+}
