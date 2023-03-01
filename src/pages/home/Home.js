@@ -9,15 +9,18 @@ const Home = () => {
   return (
     <div>
       <Nav />
-      {data
-        ? data.map((item) => {
-            return (
-              <div key={item.id}>
-                <Card data={item} />
-              </div>
-            );
-          })
-        : null}
+      <div className='home-card-cnt'>
+        {' '}
+        {data
+          ? data.map((item) => {
+              return (
+                <div key={item.id}>
+                  <Card data={item} />
+                </div>
+              );
+            })
+          : null}
+      </div>
     </div>
   );
 };

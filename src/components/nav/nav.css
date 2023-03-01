@@ -1,0 +1,6 @@
+.main-nav-cnt {
+  display: flex;
+  width: 100%;
+  max-width: 1500px;
+  justify-content: space-between;
+}

@@ -62,3 +62,34 @@
 .card-dtls-second {
   display: flex;
 }
+
+.card-rating {
+  width: 32px;
+  height: 17px;
+  left: 456px;
+  top: 499px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4f4f4f;
+}
+
+.card-star {
+  left: 17.17%;
+  right: 17.17%;
+  top: 10.2%;
+  bottom: 23.63%;
+}
+
+.card-title {
+  width: 308px;
+  height: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+}

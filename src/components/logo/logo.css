@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+
+.logo-cnt {
+  display: flex;
+}
+
+.bi-triangle {
+  color: #eb5757;
+}
+
+.logo-heading {
+  width: 69px;
+  height: 14px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #eb5757;
+}
