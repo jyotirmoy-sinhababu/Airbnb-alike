@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Nav from '../../components/nav/Nav';
 import Card from '../../components/card/Card';
@@ -6,15 +6,24 @@ import Card from '../../components/card/Card';
 import { data } from '../../utils/Data';
 
 const Home = () => {
-  const [inputData, setInputData] = useState('');
+  const [filterList, setFilterList] = useState([]);
 
-  const handleChange = (e) => {
-    setInputData({ ...inputData, [e.target.name]: e.target.value });
+  //
+
+  const filterFunction = (inputData) => {
+    if (data) {
+      const filterData = data.filter((item) => {
+        return item.country != inputData.location;
+      });
+      setFilterList(filterData);
+      console.log(inputData);
+    }
   };
-  console.log(inputData);
+
+  console.log(filterList);
   return (
     <div>
-      <Nav handleChange={handleChange} />
+      <Nav filterFunction={filterFunction} />
       <div className='home-card-cnt'>
         {' '}
         {data

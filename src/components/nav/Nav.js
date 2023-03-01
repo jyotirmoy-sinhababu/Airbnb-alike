@@ -1,16 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './nav.css';
 
 import Logo from '../logo/Logo';
 
-const Nav = ({ handleChange }) => {
+const Nav = ({ filterFunction }) => {
+  const [inputData, setInputData] = useState({});
+
+  const handleChange = (e) => {
+    setInputData({ ...inputData, [e.target.name]: e.target.value });
+  };
+
   return (
     <div className='main-nav-cnt'>
       <div className='nav-logo-cnt'>
         <Logo />
       </div>
       <div className='nav-form-cnt'>
-        <form className='form'>
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            filterFunction(inputData);
+          }}
+          className='form'
+        >
           <input
             onChange={(e) => {
               handleChange(e);
