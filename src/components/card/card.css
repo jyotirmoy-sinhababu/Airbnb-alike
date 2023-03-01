@@ -10,11 +10,18 @@
 
 .card-dtls {
   display: flex;
-
-  gap: 1.2rem;
+  width: 395px;
+  justify-content: space-between;
+  padding-right: 60px;
 }
 
-.super-host-cnt {
+.card-dtls-first {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.card-superHost-cnt {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,10 +33,11 @@
   border-radius: 12px;
 }
 
-.super-host-heading {
+.card-heading {
   width: 81px;
   height: 15px;
-
+  left: 104px;
+  top: 500px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -39,30 +47,18 @@
   color: #4f4f4f;
 }
 
-.card-rating-cnt {
-  display: flex;
-}
-
-.card-type-cnt {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .card-type,
-.card-beds {
+.card-bed {
+  height: 17px;
+  width: fit-content;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
+  color: #828282;
 }
 
-.card-title {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  color: #333333;
+.card-dtls-second {
+  display: flex;
 }
