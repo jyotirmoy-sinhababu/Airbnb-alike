@@ -9,9 +9,15 @@ const Home = () => {
   const [filterList, setFilterList] = useState([]);
 
   const filterFunction = (inputData) => {
-    console.log(inputData.location.toLowerCase());
     if (data) {
-      data.filter((item) => {});
+      const filterData = data.filter((item) => {
+        return (
+          item.city.toLocaleLowerCase() == inputData.location.toLowerCase()
+        );
+      });
+      setFilterList(filterData);
+      console.log(inputData.location.toLowerCase());
+      console.log(filterList);
     }
   };
 
