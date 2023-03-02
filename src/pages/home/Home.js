@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import './home.css';
+
 import Nav from '../../components/nav/Nav';
 import Card from '../../components/card/Card';
 
@@ -29,7 +31,7 @@ const Home = () => {
         {filterList.length && filterList ? (
           filterList.map((item) => {
             return (
-              <div key={item.id}>
+              <div className='aa' key={item.id}>
                 <Card data={item} />
               </div>
             );
