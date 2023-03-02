@@ -44,7 +44,7 @@ export const data = [
     country: 'Finland',
     superHost: false,
     title: 'Apartment next to market spuare',
-    rating: 4.48,
+    rating: 4.48, 
     maxGuests: 3,
     type: 'Entire apartment',
     beds: null,

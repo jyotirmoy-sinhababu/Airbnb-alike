@@ -8,19 +8,13 @@ import { data } from '../../utils/Data';
 const Home = () => {
   const [filterList, setFilterList] = useState([]);
 
-  //
-
   const filterFunction = (inputData) => {
+    console.log(inputData.location.toLowerCase());
     if (data) {
-      const filterData = data.filter((item) => {
-        return item.country != inputData.location;
-      });
-      setFilterList(filterData);
-      console.log(inputData);
+      data.filter((item) => {});
     }
   };
 
-  console.log(filterList);
   return (
     <div>
       <Nav filterFunction={filterFunction} />

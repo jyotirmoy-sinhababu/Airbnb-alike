@@ -4,7 +4,7 @@ import './nav.css';
 import Logo from '../logo/Logo';
 
 const Nav = ({ filterFunction }) => {
-  const [inputData, setInputData] = useState({});
+  const [inputData, setInputData] = useState('');
 
   const handleChange = (e) => {
     setInputData({ ...inputData, [e.target.name]: e.target.value });
