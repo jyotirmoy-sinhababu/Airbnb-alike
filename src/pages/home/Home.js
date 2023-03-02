@@ -26,15 +26,27 @@ const Home = () => {
       <Nav filterFunction={filterFunction} />
       <div className='home-card-cnt'>
         {' '}
-        {data
-          ? data.map((item) => {
-              return (
-                <div key={item.id}>
-                  <Card data={item} />
-                </div>
-              );
-            })
-          : null}
+        {filterList.length && filterList ? (
+          filterList.map((item) => {
+            return (
+              <div key={item.id}>
+                <Card data={item} />
+              </div>
+            );
+          })
+        ) : data ? (
+          data.map((item) => {
+            return (
+              <div key={item.id}>
+                <Card data={item} />
+              </div>
+            );
+          })
+        ) : (
+          <div>
+            <h2>no data found</h2>
+          </div>
+        )}
       </div>
     </div>
   );
