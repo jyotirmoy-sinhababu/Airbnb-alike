@@ -31,3 +31,13 @@
   border: none;
   background: #ffffff;
 }
+
+@media only screen and (max-width: 1200px) {
+  .main-nav-cnt {
+    display: flex;
+    padding-top: 30px;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+  }
+}
