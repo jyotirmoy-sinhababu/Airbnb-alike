@@ -14,7 +14,8 @@ const Home = () => {
     if (data) {
       const filterData = data.filter((item) => {
         return (
-          item.city.toLocaleLowerCase() == inputData.location.toLowerCase()
+          item.city.toLocaleLowerCase() == inputData.location.toLowerCase() ||
+          item.maxGuests == inputData.guests
         );
       });
       setFilterList(filterData);
@@ -26,6 +27,14 @@ const Home = () => {
   return (
     <div>
       <Nav filterFunction={filterFunction} />
+      <div className='home-header-cnt'>
+        <div style={{ paddingLeft: '100px' }}>
+          <p className='header-text'>Stays in Finland</p>
+        </div>
+        <div>
+          <p className='header-text-second'>12+ stays</p>
+        </div>
+      </div>
       <div className='home-card-cnt'>
         {' '}
         {filterList.length && filterList ? (
