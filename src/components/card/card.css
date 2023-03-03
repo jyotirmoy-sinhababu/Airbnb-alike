@@ -93,3 +93,9 @@
   line-height: 20px;
   color: #333333;
 }
+
+.card-main-cnt {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
